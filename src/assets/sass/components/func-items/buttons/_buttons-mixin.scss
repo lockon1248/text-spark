@@ -1,0 +1,182 @@
+@import 'buttons';
+
+
+/* 🚩捷徑🚩 */
+
+//桌機 PC buttons 10
+//手機 MB buttons 54
+
+
+
+//---------------------------------------------------------------------------------------
+/* ⭐桌機 PC buttons⭐ */
+
+//🔵
+//regular
+@mixin regularBlueBtn_PC {
+  @include regularBtn_PC;
+  background-color: $btnBlue;
+  color: $btnWhite;
+  border: 0;
+}
+
+;
+
+//small
+@mixin smallBlueBtn_PC {
+  @include smallBtn_PC;
+  background-color: $btnBlue;
+  color: $btnWhite;
+  border: 0;
+}
+
+;
+
+
+//⚪
+//regular
+@mixin regularWhiteBtn_PC {
+  @include regularBtn_PC;
+  background-color: $btnWhite;
+  color: $btnBlue;
+  border: 1px solid $btnBlue;
+}
+
+;
+
+//small
+@mixin smallWhiteBtn_PC {
+  @include smallBtn_PC;
+  background-color: $btnWhite;
+  color: $btnBlue;
+  border: 1px solid $btnBlue;
+}
+
+;
+
+
+//🟡
+//regular
+@mixin regularGoldBtn_PC {
+  @include regularBtn_PC;
+  background-color: $btnGold;
+  color: $btnWhite;
+  border: 0;
+}
+
+;
+
+//small
+@mixin smallGoldBtn_PC {
+  @include smallBtn_PC;
+  background-color: $btnGold;
+  color: $btnWhite;
+  border: 0;
+}
+
+//---------------------------------------------------------------------------------------
+/* ⭐手機 MB buttons⭐ */
+
+//🔵
+//regular
+@mixin regularBlueBtn_MB {
+  @include regularBtn_MB;
+  background-color: $btnBlue;
+  color: $btnWhite;
+  border: 0;
+}
+
+;
+
+//small
+@mixin smallBlueBtn_MB {
+  @include smallBtn_MB;
+  background-color: $btnBlue;
+  color: $btnWhite;
+  border: 0;
+}
+
+;
+
+
+//⚪
+//regular
+@mixin regularWhiteBtn_MB {
+  @include regularBtn_MB;
+  background-color: $btnWhite;
+  color: $btnBlue;
+  border: 1px solid $btnBlue;
+}
+
+;
+
+//small
+@mixin smallWhiteBtn_MB {
+  @include smallBtn_MB;
+  background-color: $btnWhite;
+  color: $btnBlue;
+  border: 1px solid $btnBlue;
+}
+
+;
+
+
+//🟡
+//regular
+@mixin regularGoldBtn_MB {
+  @include regularBtn_MB;
+  background-color: $btnGold;
+  color: $btnWhite;
+  border: 0;
+}
+
+;
+
+//small
+@mixin smallGoldBtn_MB {
+  @include smallBtn_MB;
+  background-color: $btnGold;
+  color: $btnWhite;
+  border: 0;
+}
+
+;
+
+
+
+//---------------------------------------------------------------------------------------
+/* ⭐checkout-cards buttons⭐ */
+
+//PC
+
+@mixin checkoutCardsBlueBtn_PC {
+  @include checkoutCardsBtn_PC;
+  background-color: $btnBlue;
+  color: $btnWhite;
+  border: 0;
+}
+
+
+@mixin checkoutCardsWhiteBtn_PC {
+  @include checkoutCardsBtn_PC;
+  background-color: $btnWhite;
+  color: $btnBlue;
+  border: 1px solid $btnBlue;
+}
+
+//MB
+
+@mixin checkoutCardsBlueBtn_MB {
+  @include checkoutCardsBtn_MB;
+  background-color: $btnBlue;
+  color: $btnWhite;
+  border: 0;
+}
+
+
+@mixin checkoutCardsWhiteBtn_MB {
+  @include checkoutCardsBtn_MB;
+  background-color: $btnWhite;
+  color: $btnBlue;
+  border: 1px solid $btnBlue;
+}

@@ -1,0 +1,198 @@
+div.title_img {
+    img {
+        max-width: 100%;
+    }
+}
+
+div.container {
+    width: 100%;
+    position: relative;
+    div.main_body {
+        width: 62.5vw;
+        margin: auto;
+
+        div.title_block {
+            display: flex;
+            @include custom-responsive(" xs sm") {
+                padding: 20px 0 30px;
+                align-items: center;
+                justify-content: center;
+            }
+            @include custom-responsive(" md lg") {
+                justify-content: space-between;
+            }
+            @include custom-responsive(" xl xxl") {
+                padding: 20px 0 35px;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            h1 {
+                color: $primaryBgBlue;
+
+                @include custom-responsive(" xs sm") {
+                    @include h1_MB;
+
+                }
+
+                @include custom-responsive(" xl xxl") {
+                    @include h1_PC;
+                }
+
+            }
+            img.deco_line{
+
+                @include custom-responsive(" xs sm") {                   
+                    display: none;
+                }
+                @include custom-responsive("md") {
+                    width: 70%;
+                    display: block;
+                }
+                @include custom-responsive("lg") {
+                    display: block;
+                }
+                @include custom-responsive(" xl xxl") {                 
+                    display: block;
+                }
+            }
+        }
+
+        div.title_text {
+            p {
+                @include custom-responsive(" xs sm") {
+                    @include h6_MB;
+                    padding: 20px 0;
+
+                }
+
+                @include custom-responsive(" xl xxl") {
+                    @include h6_PC;
+                }
+            }
+
+        }
+
+        div.contact_block {
+            div.contact_message {
+                div.contact_message_inner {
+                    align-items: center;
+                    padding: 20px 0;
+
+                    @include custom-responsive(" xs sm") {}
+
+                    @include custom-responsive(" xl xxl") {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                }
+
+                img {
+
+                    @include custom-responsive(" xs sm") {
+                        width: 100%;
+                        border-radius: $br_MB;
+                    }
+
+                    @include custom-responsive(" xl xxl") {
+                        width: 35%;
+                        border-radius: $br_PC;
+                    }
+                }
+
+                .contact_text {
+
+                    @include custom-responsive(" xs sm") {}
+
+                    @include custom-responsive(" xl xxl") {
+                        padding-left: 50px;
+                    }
+
+                    h4 {
+                        padding: 20px 0;
+                        color: $basicFontColor;
+
+                        @include custom-responsive(" xs sm") {
+                            @include h4_B_MB;
+
+                        }
+
+                        @include custom-responsive(" xl xxl") {
+                            @include h4_B_PC;
+
+                        }
+
+                    }
+
+                    p {
+                        color: $basicFontColor;
+
+                        @include custom-responsive(" xs sm") {
+                            @include h6_MB;
+                        }
+
+                        @include custom-responsive(" xl xxl") {
+                            @include h6_PC;
+                        }
+
+
+
+                    }
+
+                }
+
+                .text_line {
+                    width: 100%;
+                    border: 1px solid $functionalLightGrey4;
+                }
+            }
+
+            div.map {
+                h2 {
+                    color: $primaryBgBlue;
+                    padding: 50px 0 30px;
+
+                    @include custom-responsive(" xs sm") {
+                        @include h2_MB;
+                    }
+
+                    @include custom-responsive(" xl xxl") {
+                        @include h2_PC;
+                    }
+
+                }
+
+                iframe {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    img.superman {
+        position: relative;
+
+        @include custom-responsive(" xs sm") {
+            display: none
+        }
+
+        @include custom-responsive(" xl xxl") {
+            display: block;
+            left: 100%;
+        }
+    }
+
+    img.contact_star{
+        position: absolute;
+        @include custom-responsive(" xs sm") {
+            display: none
+        }
+
+        @include custom-responsive(" xl xxl") {
+            display: block;
+            top: 50%;
+            left: 0;
+        }
+    }
+}

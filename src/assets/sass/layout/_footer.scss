@@ -1,0 +1,430 @@
+@import "@/assets/sass/base/color";
+@import '@/assets/sass/base/fonts/fonts-mixin';
+@import '@/assets/sass/base/rwd/breakpoints';
+
+
+@include custom-responsive("xs"){
+  div.footer_content{
+    margin-left: 5vw;
+
+    div.information{
+
+      div.logo{
+        
+        img{
+          width: 300px;
+          margin-top: 15vh;
+        }
+      }
+
+      div.business_hours{
+        
+        span{
+          margin-bottom: 3vh;
+        }
+        
+        span.service_hours{
+          font-size: 14px;
+        }
+
+        span.time{
+          font-size: 28px;
+        }
+
+        span.date{
+          font-size: 14px;
+        }
+      }
+
+      div.location{
+
+        span.headquarters{
+          font-size: 14px;
+        }
+
+        span{
+          font-size: 14px;
+        }
+
+        i{
+          margin-right: 3vw;
+        }
+      }
+    }
+
+    div.items{
+
+      div.list{
+  
+        div{
+          display: none;
+        }
+      }
+    }
+
+    div.newsletter{
+      margin-top: 5vh;
+
+      label{
+
+        h6{
+          font-size: $h6Fs_MB;
+          color: $primaryBrandWhite;
+        }
+      }
+
+      input{
+        width: 60vw;
+        margin-top: 25px;
+      }
+    }
+  }
+
+  div.footer_copyright{
+
+    div.copyright{
+      justify-content: center;
+      padding: 20px;
+
+      span{
+        font-size: 14px;
+        
+      }
+    }
+  } 
+}
+
+
+@include custom-responsive("md"){
+  div.footer_content{
+
+    div.information{
+
+      div.logo{
+        
+        img{
+          width: 400px;
+        }
+      }
+
+      div.business_hours{
+        
+        span{
+          
+        }
+        
+        span.service_hours{
+          font-size: 16px;
+        }
+
+        span.time{
+          font-size: 32px;
+        }
+
+        span.date{
+          font-size: 16px;
+        }
+      }
+
+      div.location{
+
+        span.headquarters{
+          font-size: 16px;
+        }
+
+        span{
+          font-size: 16px;
+        }
+
+        i{
+          
+        }
+      }
+    }
+
+    div.items{
+
+      div.list{
+  
+        div{
+          
+        }
+      }
+    }
+
+    div.newsletter{
+      
+      label{
+
+        h6{
+          font-size: $h6Fs_PC;
+        }
+      }
+
+      input{
+       
+      }
+    }
+  }
+
+  div.footer_copyright{
+
+    div.copyright{
+      justify-content: flex-end;
+      padding: 30px;
+
+      span{
+        font-size: 16px;
+      }
+    }
+  } 
+}
+
+
+@include custom-responsive("xl"){
+  div.footer_content{
+    display: flex;
+
+    div.information{
+      
+      div.logo{
+        
+        img{
+          margin-top: 20vh;
+        }
+      }
+
+      div.business_hours{
+        
+        span{
+          margin-bottom: 1vh;
+        }
+        
+        span.service_hours{
+          
+        }
+
+        span.time{
+          
+        }
+
+        span.date{
+          
+        }
+      }
+
+      div.location{
+
+        span.headquarters{
+          
+        }
+
+        span{
+          
+        }
+
+        i{
+          margin-right: 1vw;
+        }
+      }
+    }
+
+    div.items{
+
+      div.list{
+          margin-top: 20vh;
+        div{
+          display: block;
+        }
+      }
+    }
+
+    div.newsletter{
+      margin-top: 8vh;
+
+      label{
+
+        h6{
+          font-size: $h6Fs_PC;
+        }
+      }
+
+      input{
+        width: 39%;
+        margin-top: 10px;
+      }  
+    }
+  }
+
+  div.footer_copyright{
+
+    div.copyright{
+      justify-content: flex-end;
+      padding: 30px;
+
+      span{
+        
+      }
+    }
+  } 
+}
+
+
+
+
+
+
+footer{
+  
+  width: 100%;
+  background-image: url("/pictures/decorations/layout/footer.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  bottom: 0;
+  left: 0;
+
+  div.footer_content{
+    justify-content: space-around;
+
+    div.information{
+      margin-right: 5vw; 
+
+      div.logo{
+        width: 20%; 
+        margin-bottom: 5vh;
+      }
+
+      div.business_hours{
+
+        span{
+          display: block;
+          color: $primaryBrandWhite;
+        }
+
+        span.service_hours{
+          font-weight: $fWBold;
+          letter-spacing: $h6Ls;
+          font-family:  "Noto Sans TC";
+        }
+
+        span.time{
+          font-weight: $fWRegular;
+          letter-spacing: $h2Ls;
+          font-family: "Lato",;
+        }
+
+        span.date{
+          letter-spacing: $h6Ls;
+          font-family:  "Noto Sans TC";
+        }
+
+      }
+
+      div.location{
+        margin-top: 6vh;
+
+        span.headquarters{
+          display: block;
+          margin-bottom: 2vh;
+          font-weight: $fWBold;
+          letter-spacing: $h6Ls;
+          font-family:  "Noto Sans TC";
+          color: $primaryBrandWhite;
+        }
+
+        span{
+          letter-spacing: $h6Ls;
+          font-family:  "Noto Sans TC";
+          color: $primaryBrandWhite;
+        }
+
+        i{
+          margin-bottom: 2vh;
+          color: $primaryBrandWhite;
+          
+        }
+      }
+    }
+
+    div.items{
+
+      div.list{
+        display: flex;
+
+        div{
+          margin-right: 1.5vw;
+
+          h5{
+            @include h5_B_PC();
+            margin-bottom: 3vh;
+            
+            .link{
+              color: $primaryBrandWhite;
+              text-decoration: none;
+            }
+
+          }
+
+          h6{
+            @include h6_PC();
+            margin-bottom: 2vh;
+
+            .link{
+              color: $primaryBrandWhite;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      div.newsletter{
+
+
+        label{
+          
+          h6{
+            letter-spacing: $h6Ls;
+          }
+        }
+
+        input{
+          display: block;
+          border-radius: 100px;
+          padding: 15px;
+          box-sizing: border-box;
+          background-color: transparent;
+          color: $primaryBrandWhite;
+
+          &::placeholder{
+            color: rgba(255, 255, 255, 0.45);
+            text-indent: 10px;
+          }
+
+          &:focus{
+            outline: none;
+            text-indent: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  div.footer_copyright{
+    margin-top: 7vh;
+    border-top: 0.5px solid $primaryBrandWhite;
+
+    div.copyright{
+      display: flex;
+      box-sizing: border-box;
+      letter-spacing: $h6Ls;
+      span{
+        color: $primaryBrandWhite;
+      }
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,75 @@
+.banner {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+}
+
+div.donate_container {
+    position: relative;
+
+    div.main_body {
+        margin: auto;
+        @include custom-responsive("xs sm") {
+            @include body_space_MB;
+        }
+
+        @include custom-responsive("xl xxl") {
+            @include body_space_PC;
+        }
+
+        div.title_wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 95px 0 70px;
+
+            h1 {
+                color: $primaryBrandBlue;
+                display: inline-block;
+                @include custom-responsive("xs sm") {
+                    @include h1_MB;
+                }
+
+                @include custom-responsive("xl xxl") {
+                    @include h1_PC;
+                }
+            
+            }
+
+            div.titleline {  
+                height: 1px;
+                background-color: $primaryBrandBlue;
+                @include custom-responsive("xs sm") {
+                    width: 72%;
+                }
+
+                @include custom-responsive("xl xxl") {
+                    width: 78%;
+                }
+            }
+
+        }
+
+    }
+    .deco_flowering {
+        position: absolute;
+
+        @include custom-responsive("xs sm") {
+            left: 50%;
+            bottom: -8%;
+            transform: translate(-50%, 0);
+        }
+
+        @include custom-responsive("xl xxl") {
+            left: 3%;
+            bottom: -6%;
+        }
+
+        img {
+            width: 90%;
+        }
+    }
+
+}

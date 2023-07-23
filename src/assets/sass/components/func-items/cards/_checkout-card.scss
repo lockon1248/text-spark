@@ -1,0 +1,74 @@
+div.check_out_card {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  @include boxShadow_PC;
+  border-radius: $br_PC;
+
+
+  h2.check_out_overview_title {
+    color: $primaryBrandBlue;
+    margin: 40px 50px 20px;
+
+  }
+
+  div.checkout_datalist {
+    display: flex;
+    flex-direction: column;
+
+    div.checkout_data_wrap {
+
+      div.checkout_data {
+        display: flex;
+        justify-content: space-evenly;
+
+
+        span {
+          @include h5_PC;
+          display: block;
+          margin: 10px 0;
+        }
+
+        span.name {
+          width: 20%;
+          padding-left: 20px;
+        }
+
+        span.count {
+          width: 20%;
+        }
+
+        span.cost {
+          width: 30%;
+        }
+
+      }
+    }
+
+  }
+
+  div.payment {
+
+    div.payment_info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: absolute;
+      bottom: 0;
+      width: 500px;
+      height: 150px;
+      background-color: $functionalLightGrey1;
+      border-radius: 0 0 $br_PC $br_PC;
+
+      span.payment_title,
+      span.total_price {
+        @include h3_PC;
+        width:40%;
+      }
+
+    }
+  }
+
+
+}

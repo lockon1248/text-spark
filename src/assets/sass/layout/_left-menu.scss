@@ -1,0 +1,51 @@
+@import "@/assets/sass/base/_color.scss";
+@import "@/assets/sass/base/fonts/_fonts.scss";
+@import "@/assets/sass/base/fonts/_fonts-mixin.scss";
+@import "@/assets/sass/base/_box-shadow.scss";
+@import '@/assets/sass/base/rwd/breakpoints';
+
+   div.left_menu_container{
+    display: none;
+   }
+
+   
+   @include custom-responsive("xl") {
+    div.left_menu_container{
+       display: block;
+       position: absolute;
+       top: 75vh;
+       left: 0;
+       width: 15vw;
+       @include boxShadow_PC;
+       border-radius: 0px 25px 25px 0px;
+       h3{
+        font-size: $h3Fs_PC;
+        color: $primaryBrandBlue;
+        font-weight: $fWBold;
+        padding: 60px 0px 30px 7%;
+        box-sizing: border-box;
+       }
+       li{
+        list-style: none;
+        .link{
+            text-decoration: none;
+            h4{
+                font-size: $h4Fs_PC;
+                color: $primaryBrandBlue;
+                font-weight: $fWRegular;
+                margin-right: 17%;
+                padding: 15px 0px 15px;
+                margin-left: 7%; 
+                border-bottom: 1px solid $functionalLightGrey3;
+            }
+        }
+       }
+    }
+ }
+
+
+
+    
+
+
+  

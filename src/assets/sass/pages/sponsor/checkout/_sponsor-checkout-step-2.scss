@@ -1,0 +1,46 @@
+div.sponsor_checkout_container {
+  width: 100%;
+  position: relative;
+
+  div.main_body {
+    position: relative;
+
+    @include custom-responsive("xs sm") {
+      @include body_space_MB
+    }
+
+    @include custom-responsive("xl xxl") {
+      @include body_space_PC
+    }
+
+    div.checkout_wrap {
+      position: relative;
+      top: -150px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 100px;
+
+      div.payment_wrap {
+        @include flex_vm;
+        gap: 40px;
+      }
+
+      div.overview_wrap {
+        @include flex_vm;
+        gap: 40px;
+      }
+    }
+
+    img {
+      position: absolute;
+      left: -12vw;
+      top: 30vh;
+      animation-name: rocket;
+
+    }
+
+
+
+  }
+}
